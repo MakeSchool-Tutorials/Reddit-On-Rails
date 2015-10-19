@@ -3,8 +3,11 @@ title: Let's Build Reddit
 slug: lets-build-reddit
 ---
 
-Let's build a Ruby on Rails app that has the same functionality as Reddit. Users can post links and content, vote, create accounts and create subreddits etc. Reddit is a highly trafficked site with over 1 billion page views, but has a very simple UI. 
+Let's build [Reddit](https://www.reddit.com/) using [Ruby on Rails](http://rubyonrails.org/). By now, you have built a few toy rails applications and may have even deployed a few of them to Heroku. You understand the basics of building a Ruby on Rails app but to mirror a real world application you need to dive into something deeper. This tutorial is intended to give you an experience closer to what you may have in a proffesional work environment. Before we dive into building the app, let's take a quick glance at how reddit was built and how it run's today. 
 
+Reddit, as you might be well-aware is a highly trafficked site with over [1 billion page views](http://highscalability.com/blog/2013/8/26/reddit-lessons-learned-from-mistakes-made-scaling-to-1-billi.html). Originally built with [Lisp](https://en.wikipedia.org/wiki/Lisp_\(programming_language\)), Reddit was migrated to [Python](http://www.aaronsw.com/weblog/rewritingreddit) in 2005, first using [web.py](http://webpy.org/) and later [Pylons](http://www.pylonsproject.org/). Interestingly enough, the [code that powers](https://github.com/reddit/reddit) reddit is open source and anyone can send a pull request to make reddit better. In the Python world, the equivalent of Rails is [Django](https://www.djangoproject.com/), however Reddit uses [Pylons](http://www.pylonsproject.org/) which is more configurable than Django. 
+
+We are using [Rails](http://rubyonrails.org/) to build Reddit so you can focus on getting familiar with the entire stack, knowing how to connect the pieces together at each layer, supporting team members, and gain experience with scaling and delivering a polished product.
 
 Getting Started
 ==
