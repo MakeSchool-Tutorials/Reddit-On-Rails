@@ -1,19 +1,17 @@
 ---
-title: Let's Build Reddit
-slug: lets-build-reddit
+title: Forming a Team
+slug: forming-a-team
 ---
+  
+Let's break into teams of 3 or 4 people. You want to have a large enough group to give you a sense of development in the real world. In the early stages, most team members are positive and polite. Things change as you start working together, and conflicts arise. During the project, be prepared to resolve conflicts with code, design and working styles. The quicker you can resolve and find a good balance with your team the more velocity you can have on your project. Some tips to keep in mind as you work with your team
 
-Let's build a Ruby on Rails app that has the same functionality as Reddit. Users can p, vote, create accounts and create subreddits etc. Reddit is a highly trafficked site with over 1 billion page views, but has a very simple UI. 
+1. Define tasks and projects as far as you can
+2. Agree on Design, Page Flows, Naming Models
+3. Testing - TDD or not? The team has to agree
+4. Git flow approach - Rebase vs. Merge workflow
+5. Strength/Expertise of team members 
 
-
-Getting Started
-==
-
-We'll be using *Classroom for GitHub* to manage assignments throughout the program. You'll need to:
-
-1. Go to the [assignment page]()
-2. Accept the assignment and follow the link to the created repository
-3. Clone the repository and use it throughout this project.
+The tutorial gives you iterations for each feature, so this makes things easier as you have checked points to help you retrospect and also stay on track.
 
 
 
