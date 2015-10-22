@@ -10,8 +10,10 @@ Let's break into teams of 3 or 4 people. You want to have a large enough group t
 3. Testing - TDD or not? The team has to agree
 4. Git flow approach - Rebase vs. Merge workflow
 5. Strength/Expertise of team members 
+6. Pairing on tasks
 
 The tutorial gives you iterations for each feature, so this makes things easier as you have checked points to help you retrospect and also stay on track.
+
 
 
 

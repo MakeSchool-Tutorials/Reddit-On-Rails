@@ -1,4 +1,15 @@
-Trello
+---
+title: Planning Management
+slug: planning-management
+---
+
+Use a tool to help you keep track of milestones. You can use [Trello](), [Asana]().
+You can compare and decide which tool your team wants to use https://www.quora.com/How-does-Asana-compare-to-Trello
+
+
+
+Break down each milestone into tasks
+Trello card for each and time estimate
 
 Column for each milestone
 Card for each task, estimated time in title
