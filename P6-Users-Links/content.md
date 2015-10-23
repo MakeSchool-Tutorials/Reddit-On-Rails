@@ -16,9 +16,21 @@ Users -- profile list of posts
 Links -- displayed on homepage, sorted by creation time (no subreddits)
 
 
+### Links and Scoring them
+
+What does the home page show? How does it calculate which submission to show?
+
+How often should scores be calculated and when does the calculation happen, everytime someone submits , every hour etc.
+
+
 ### DB Migrations 
 
 Are the user and subreddit tables changing? 
 
 Pro Tip: don't use migrations in the beginning but simply add/remove column in table, then run
 `rake db:drop db:create db: migrate` to start over 
+
+### Refactor 
+
+- consolidate views, scaffolds generates a lot of extra stuff. 
+- shared views

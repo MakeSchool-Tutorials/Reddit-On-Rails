@@ -1,3 +1,8 @@
+---
+title: Performance
+slug: performance
+---
+
 Ruby backend reactor pattern API
 
 Build Ruby application that load tests that application

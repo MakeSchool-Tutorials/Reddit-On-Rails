@@ -25,6 +25,9 @@ Write detail user stories on Trello, for the use cases that you decide to build.
 1. register/login/welcome page
 User creation, defaults, view sub's posts
 
+Seed the data, test from rails console
+
+
 Mark the Tasks complete in Trello
 
 ### Subreddits

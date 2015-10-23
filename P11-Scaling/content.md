@@ -1,3 +1,8 @@
+---
+title: Scaling
+slug: scaling
+---
+
 Caching using Redis
 Background jobs
 NoSQL databases- Elastic Search integration
