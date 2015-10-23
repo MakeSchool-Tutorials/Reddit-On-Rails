@@ -3,7 +3,15 @@ title: Performance
 slug: performance
 ---
 
+Web performance & DB Performance
+
+Is it the network or the data? Use a CDN Use a CDN for images
+Performance with New Relic
+
+
 Ruby backend reactor pattern API
+
+Store stats in Mongodb
 
 Build Ruby application that load tests that application
 Figure out bottlenecks and improve

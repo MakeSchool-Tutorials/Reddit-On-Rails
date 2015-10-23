@@ -15,6 +15,8 @@ Comments relationship
 
 When in doubt add Seed data
 Test on Rails console to see if models work accurately
+Use ruby-debug gem
+Use an editor such as RubyMine 
 
 
 ## Testing
