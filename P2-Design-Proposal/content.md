@@ -42,7 +42,7 @@ A Wireframe, which is a layout of your site or page, can help you decide on how 
 
 ### Use case diagrams
 
-Use case diagrams shows how users interact with the system.
+Use case diagrams show how users interact with the system. 
 
 ![](UseCase.png?raw=true)
 
