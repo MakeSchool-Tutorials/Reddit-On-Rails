@@ -16,5 +16,14 @@ Javascript Plugin or roll your own.
 Can you gemify it and use it in other places
 
 
+### Twelve Factor apps
+
+config & processes
+
+Continuous deployment using Travic CI
+
+Handling 404's and the Record not found exception
+
+
 
 

@@ -30,7 +30,15 @@ Are the user and subreddit tables changing?
 Pro Tip: don't use migrations in the beginning but simply add/remove column in table, then run
 `rake db:drop db:create db: migrate` to start over 
 
+
+### Users as Moderators
+
+Fine grained Access control
+
+
 ### Refactor 
 
 - consolidate views, scaffolds generates a lot of extra stuff. 
 - shared views
+
+Helpers are methods you can define in the files in app/helpers, and they’re made available in your views. Helpers are for extracting the logic from the views; views should just be about displaying information. Every controller that comes from the controller generator has a corresponding helper, and another helper module exists for the entire application:

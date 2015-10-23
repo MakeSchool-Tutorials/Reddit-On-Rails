@@ -5,7 +5,8 @@ slug: Uploads Image Preview
 
 ### Uploading Media
 
-
+ Attach one file or several files
+What's different for Multi file upload- Async requests, Using Jquery
 
 
 ### Image preview
