@@ -4,7 +4,15 @@ slug: setup-subreddit-users
 ---
 
 ### Project Setup
-Our first task is to create a new rails app. The whole team should pair on this task. It's going to be done once and than everyone will need to setup their individual machines. Once the setup is complete add a `Readme` file and push to github for future reference. Setting up a `Readme` file is good practice on any project, whether it be big or small. Deploy the app right from the beginning and deal with all environment/infrastructure issues. Make sure that everyone on the team has a running environment and can deploy before you start coding. If you created a Task for this in Trello or Asana mark it as complete.
+
+Our first task is to create a new rails app. The whole team should pair on this task. It's going to be done once and than everyone will need to setup their individual machines. Once the setup is complete add a `Readme` file and push to github for future reference. Setting up a `Readme` file is good practice on any project, whether it be big or small. 
+
+
+### Deployment
+
+Deploy the app right from the beginning and deal with all environment/infrastructure issues. Make sure that everyone on the team has a running environment and can deploy before you start coding. If you created a Task for this in Trello or Asana mark it as complete.
+
+You will have to make decisions about your production environment, such as choosing a database. 
 
 ### Users
 

@@ -5,7 +5,7 @@ slug: ui-users-links
 
 ### Spruce up the UI
 
-Users can login and create subreddits, but our UI looks bland. 
+Users can login and create subreddits, but your UI may be looking bland. Add some styling, this maybe a good time to add a CSS framework in your app if you haven't already done so.
 
 ### Usecases for Links
 
