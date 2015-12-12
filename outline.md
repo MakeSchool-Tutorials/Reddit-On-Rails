@@ -4,6 +4,8 @@
 
 ## Explanation of Reddit
 
+---
+
 # Section - Organizing Teams
 
 ## Organizing Teams
@@ -14,6 +16,8 @@
 2. TDD and Test Coverage mechanism? (75% cov?)
 3. Using git flow for working together. Open Question: rebase workflow or merge workflow?
 4. Define work ahead of time so you know
+
+---
 
 # Section - Modeling
 
@@ -35,9 +39,13 @@ Comments
 
 are the four major models you will have. How do you relate to each other.
 
+---
+
 # Section - Organizing tasks and work
 
 You will have a lot of stuff to work on. Do you want to organize your system in a specified format? If it's just two people do we need to use a trello board or anything like that?
+
+---
 
 # Section - Setting up RVM and Rails
 
@@ -47,6 +55,8 @@ Working together to make sure your
 3. Setup rails
 4. Make sure that you're both synced on gems, etc.
 5. Agree on text editor white space agreements.
+
+---
 
 # Section - Users
 
@@ -62,6 +72,8 @@ Working together to make sure your
 
 5. Bonus: Setting up session store using a database instead.
 
+---
+
 # Section Subreddits
 
 Once you have the user model. You can have somebody else set up sub reddit.
@@ -70,6 +82,8 @@ Once you have the user model. You can have somebody else set up sub reddit.
 2. Ensure that sub reddits can have a moderator.
 3. Create a sub reddit page so you can view the sub reddit. Explanation of routing. TODO: Slugs?
 4. What happens if you a user deletes their account, any created subreddits should still be around! Explanation of relationships involving destroy and etc.
+
+---
 
 # Section User Links
 
@@ -80,10 +94,14 @@ Creating User Links and Self Posts
 3. Polymorphic inheritance has the benefit of figuring out which model you're looking at while at the same time saying specific fields to both.
 5. Have someone create the page that shows what it looks like and shows the links and self posts.
 
+---
+
 # Section Voting
 
 1. Set up for votes for each user. How do you model this? How do you build it using javascript and endpoints.
 2. How do you ensure that AJAX requests have session cookies?
+
+---
 
 # Section Home Page
 
@@ -93,12 +111,16 @@ Creating User Links and Self Posts
 4. Learn about setting up boostrap
 5. Spend some time cleaning up your css
 
+---
+
 # Section Comments
 
 1. Create comments, make sure that they can link to their parent
 2. Show the HTML representation
 3. Advanced: be able to hide and show and collapse comments
 4. Super advanced. Implement other sorting options for comments.
+
+---
 
 # Section - Admin Controls
 
@@ -107,9 +129,13 @@ Controlling sub reddits
 1. Add a moderator to table, create a migration that allows a new moderator foreign key in the subreddit table
 2. Now allow the owner and moderator to delete, edit, and remove posts
 
+---
+
 # Section - Karma
 
 Calculate a user's karma and show it. Karma is the total upvotes from all their submissions.
+
+---
 
 # Section Using Redis To Cache Scores
 
@@ -118,19 +144,27 @@ Calculate a user's karma and show it. Karma is the total upvotes from all their 
 3. Setting up Redis might be complicated?
 4. TODO: How do scores get calculated now?
 
+---
+
 # Section Elastic Search
 
 1. Let's build some search functionality using Elastic Search for to search our posts.
 2. Be able to limit a search to only subreddits
+
+---
 
 # Section Static Asset Pipelines
 
 1. Let's build some static asset pipeline so that we can use scss.
 2. Simplify your css rules by using css. Ensure cross browser working
 
+---
+
 # Section Rails 5 Upgrade
 
 1. Unknown
+
+---
 
 # Section More advanced topics
 
