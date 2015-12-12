@@ -1,3 +1,8 @@
+# Rohan Todo
+
+1. Identify any sections that would be good to check upon and provide feedback for the instructors to determine if that progres is being made.
+2. Contact Dan K about git flow
+3. 
 # Section - Assignment
 
 ## Assignment Creation
@@ -50,6 +55,7 @@ You will have a lot of stuff to work on. Do you want to organize your system in 
 # Section - Setting up RVM and Rails
 
 Working together to make sure your
+
 1. Github project is setup
 2. RVM is setup
 3. Setup rails
@@ -64,17 +70,21 @@ Working together to make sure your
 
 1. Create your user models. Should be done together. Migrate your models so you have github on your page.
 
-2. You can split up here, if you feel comfortable you can have your partner(s) move to the next section
+---
+
+# Section - Authentication (Branch A)
 
 3. Create an authentication workflow. Follow the tutorial at RailsTutorial.org and duplicate that. Alternative: Set up things using Devise? The rails project is already set up using that scheme instead of Devise.
 
 4. Create the signup, login page, logout, and session storage.
 
 5. Bonus: Setting up session store using a database instead.
+6. Bonus: Adding Facebook Login. Devise might be useful for that. TODO: Facebook's documentation or gem that does this for you?
+
 
 ---
 
-# Section Subreddits
+# Section Subreddits (Branch B)
 
 Once you have the user model. You can have somebody else set up sub reddit.
 
