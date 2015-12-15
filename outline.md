@@ -2,7 +2,9 @@
 
 1. Identify any sections that would be good to check upon and provide feedback for the instructors to determine if that progres is being made.
 2. Contact Dan K about git flow
-3. 
+3. Write up state of merged documentation flow
+
+
 # Section - Assignment
 
 ## Assignment Creation
@@ -99,6 +101,12 @@ Once you have the user model. You can have somebody else set up sub reddit.
 
 Creating User Links and Self Posts
 
+## Section merging
+
+Making sure that we have the two previous stuffed merge in. Should be able to only have authenticted users create sub reddits
+
+TODO: Present code that would show here's the model for URL Content and here's the model for Self posts. How do we change this. Isolate the learning to polymorphic inheritance. 
+
 1. You need two types of models. One for URL submissions one for self text submissions. How would you go about doing that.
 2. Go into a discussion of the the alternatives. You don't want to create two different models.
 3. Polymorphic inheritance has the benefit of figuring out which model you're looking at while at the same time saying specific fields to both.
@@ -106,14 +114,17 @@ Creating User Links and Self Posts
 
 ---
 
-# Section Voting
+# Section Voting (Branch A)
 
 1. Set up for votes for each user. How do you model this? How do you build it using javascript and endpoints.
 2. How do you ensure that AJAX requests have session cookies?
+3. Bonus implement best algorithim for reddit or hacker news algorithim.
+4. Bonus: compare the two
+
 
 ---
 
-# Section Home Page
+# Section Home Page (Branch B)
 
 1. Have the home page show all the posts from all the sub reddits.
 2. This is a good time to set up things so you can view things as partials.
@@ -123,7 +134,9 @@ Creating User Links and Self Posts
 
 ---
 
-# Section Comments
+# Section Comments (Branch A)
+
+## Section Merging home page and voting
 
 1. Create comments, make sure that they can link to their parent
 2. Show the HTML representation
@@ -132,41 +145,45 @@ Creating User Links and Self Posts
 
 ---
 
-# Section - Admin Controls
+# Section - Admin Controls (Branch B)
+
+## Section Merging home page and voting
 
 Controlling sub reddits
+
+TODO: Maybe how migrations work and stuff.
 
 1. Add a moderator to table, create a migration that allows a new moderator foreign key in the subreddit table
 2. Now allow the owner and moderator to delete, edit, and remove posts
 
 ---
 
-# Section - Karma
+# Section - Karma (Branch B)
 
 Calculate a user's karma and show it. Karma is the total upvotes from all their submissions.
 
 ---
 
-# Section Using Redis To Cache Scores
+# Section Using Redis To Cache Scores (Branch A)
 
+## Section merging karma, admin controls and home page.
+
+0. We can talk about how database and joins are kinda slow. 
 1. Using Redis to cache scores. Update things using that and persist it down
 2. Might be kind of complicated to set up here.
 3. Setting up Redis might be complicated?
 4. TODO: How do scores get calculated now?
+5. Nice to have: Creative way to visualize pre-redis and post-redis version. Simple way to show the performance?
 
 ---
 
-# Section Elastic Search
+# Section Static Asset Pipelines (Branch B)
 
-1. Let's build some search functionality using Elastic Search for to search our posts.
-2. Be able to limit a search to only subreddits
-
----
-
-# Section Static Asset Pipelines
+## Section merging karma, admin controls and home page.
 
 1. Let's build some static asset pipeline so that we can use scss.
-2. Simplify your css rules by using css. Ensure cross browser working
+2. Simplify your css rules by using scss. Ensure cross browser working
+3. Explain scss in the context of using css. 
 
 ---
 
@@ -178,3 +195,9 @@ Calculate a user's karma and show it. Karma is the total upvotes from all their 
 
 # Section More advanced topics
 
+# Section Responsive
+
+# Section Elastic Search
+
+1. Let's build some search functionality using Elastic Search for to search our posts.
+2. Be able to limit a search to only subreddits
