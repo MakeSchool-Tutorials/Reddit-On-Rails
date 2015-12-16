@@ -15,46 +15,22 @@
 
 # Section - Organizing Teams
 
-## Organizing Teams
-### Teams of 2
-
-## Expectations
-1. Splitting up the project when we allow you to. Pairing otherwise. Maybe have some labels?
-2. TDD and Test Coverage mechanism? (75% cov?)
-3. Using git flow for working together. Open Question: rebase workflow or merge workflow?
-4. Define work ahead of time so you know
+1. Teams of 2
+2. Talk about benefits of working in teams with industry standard flows
+3. Structure of project with split tracks of Path 1 and 2 or allow them to pair together for entire project.
 
 ---
 
 # Section - Modeling
 
-## Specifications on Reddit what you will be building.
-
-
-Building posts, comments, voting and subreddits.
-
-Where to start? Explain how ED Diagrams work.
-
-Create a basic outline of how you will model things. Keep that in mind on how to organize your models ahead of time.
-
-## Models & Relationships
-
-Users
-Subreddits
-Voting
-Comments
-
-are the four major models you will have. How do you relate to each other.
-
----
-
-# Section - Organizing tasks and work
-
-You will have a lot of stuff to work on. Do you want to organize your system in a specified format? If it's just two people do we need to use a trello board or anything like that?
+1. Talk about user stories and provide some default ones for Reddit after allowing them to work on it
+2. Create ED Diagrams to allow them to model their overall app before they start
+3. Teachers should check the ED Diagrams to make sure they have some basic models and relationships set up before we keep going.
 
 ---
 
 # Section - Setting up RVM and Rails
+
 
 Working together to make sure your
 
