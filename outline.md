@@ -34,10 +34,9 @@
 
 Working together to make sure your
 
-1. Github project is setup
+1. Github project 
 2. RVM is setup
 3. Setup rails
-4. Make sure that you're both synced on gems, etc.
 5. Agree on text editor white space agreements.
 
 ---
