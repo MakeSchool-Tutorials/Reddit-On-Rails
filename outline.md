@@ -43,14 +43,17 @@ Working together to make sure your
 
 # Section - Users
 
-0. Remember to do your work in feature branches. That way you have clean branches and you won't interfere with others.
-
-1. Create your user models. Should be done together. Migrate your models so you have github on your page.
+0. Teacher Check In!
+1. Talk about creating a new feature branch for this. 
+2. Use Rails Scaffolding to create user model
+3. Git flow merge your feature back in.
+4. Sync up 
 
 ---
 
 # Section - Authentication (Branch A)
 
+0. Make sure that students have merged their user model into the development branch, that both pairs have run migrations.
 3. Create an authentication workflow. Follow the tutorial at RailsTutorial.org and duplicate that. Alternative: Set up things using Devise? The rails project is already set up using that scheme instead of Devise.
 
 4. Create the signup, login page, logout, and session storage.
@@ -65,6 +68,7 @@ Working together to make sure your
 
 Once you have the user model. You can have somebody else set up sub reddit.
 
+0. Make sure that students have merged their user model into the development branch, that both pairs have run migrations.
 1. Create subreddit model. Created by a user. Do not enforce that subreddits model MUST have a user.
 2. Ensure that sub reddits can have a moderator.
 3. Create a sub reddit page so you can view the sub reddit. Explanation of routing. TODO: Slugs?

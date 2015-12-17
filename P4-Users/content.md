@@ -42,7 +42,9 @@ But for now let's generate our user object. Make sure your in your project direc
 	rails generate scaffold User name:string email:string
 ```
 
-You can see the terminal output shows how many things we created: migrations, controllers, models, test classes. It's a lot. But we'll focus on the migration. There should be a new file in your db/migrate folder. Open that and we can read about what this is. 
+You can see the terminal output shows how many things we created: migrations, controllers, models, test classes. It's a lot. If you need a refresher on what each folder contains look at the [https://www.railstutorial.org/book/_single-page#sec-the_hello_application](Rails Tutorial) (scroll a bit down from that link)
+
+But we'll focus on the migration. There should be a new file in your db/migrate folder. Open that and we can read about what this is. 
 
 In this folder we'll see what happens. There's a single class with a change method. This is going to be the command that Rails will run in order to reflect our model in our database. 
 
@@ -73,6 +75,8 @@ At this point there should have been enough progress where you feel comfortable 
 Let's create a commit and explain what we've just done.
 
 At this point you should have made a decent base for people to split off! Make sure that you check in with your teacher to make sure that two of you at a good point and if you choose to you can split the next two modules up! 
+
+Once your code is committed let's merge this code back into master. Finish the feature and push your changes so that both you and your partner have the same code. Your partner will have to run migrations as well in order to have their database sync up with the Rails models. 
 
 
 
