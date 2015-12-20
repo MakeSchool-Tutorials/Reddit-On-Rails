@@ -58,8 +58,8 @@ Working together to make sure your
 
 4. Create the signup, login page, logout, and session storage.
 
-5. Bonus: Setting up session store using a database instead.
-6. Bonus: Adding Facebook Login. Devise might be useful for that. TODO: Facebook's documentation or gem that does this for you?
+6. Adding Facebook Login using omniauth-facebook gem. 
+TODO: Do it myself to follow instructions
 
 
 ---

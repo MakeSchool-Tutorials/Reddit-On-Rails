@@ -79,7 +79,11 @@ TODO: Go back to this. You'll need two important pieces of information here. You
 
 3. You can find instructions for the gem available on it's [https://github.com/mkdynamic/omniauth-facebook](Github Page). You'll note for Facebook login we'll need to still need to create some type of user name and because of our validations we will need their email addresses. So please make sure to look up how to ask for the email permission Facebook.
 
-3. The more detailed instructions for integrating the OmniAuth application will available here: https://github.com/intridea/omniauth
+3. The more detailed instructions for integrating the OmniAuth application will available here: https://github.com/intridea/omniauth. We will be doing something slightly different than the instructions though, we already have a session create method, so let's create create_facebook method to point everything to instead of create. This way we have two different ways of creation sessions: traditional login and facebook login. 
+
+4. Another requirement is that we need a username! Normally if you implement Facebook login you want a real identity and thus would use their real name but because this is Reddit we don't do that. So just generate a random username for each user in this case. 
+
+
 
 
 
