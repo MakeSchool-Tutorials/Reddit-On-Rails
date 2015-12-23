@@ -34,7 +34,7 @@
 
 Working together to make sure your
 
-1. Github project 
+1. Github project
 2. RVM is setup
 3. Setup rails
 5. Agree on text editor white space agreements.
@@ -44,10 +44,10 @@ Working together to make sure your
 # Section - Users
 
 0. Teacher Check In!
-1. Talk about creating a new feature branch for this. 
+1. Talk about creating a new feature branch for this.
 2. Use Rails Scaffolding to create user model
 3. Git flow merge your feature back in.
-4. Sync up 
+4. Sync up
 
 ---
 
@@ -58,7 +58,7 @@ Working together to make sure your
 
 4. Create the signup, login page, logout, and session storage.
 
-6. Adding Facebook Login using omniauth-facebook gem. 
+6. Adding Facebook Login using omniauth-facebook gem.
 TODO: Do it myself to follow instructions
 
 
@@ -69,10 +69,9 @@ TODO: Do it myself to follow instructions
 Once you have the user model. You can have somebody else set up sub reddit.
 
 0. Make sure that students have merged their user model into the development branch, that both pairs have run migrations.
-1. Create subreddit model. Created by a user. Do not enforce that subreddits model MUST have a user.
-2. Ensure that sub reddits can have a moderator.
-3. Create a sub reddit page so you can view the sub reddit. Explanation of routing. TODO: Slugs?
-4. What happens if you a user deletes their account, any created subreddits should still be around! Explanation of relationships involving destroy and etc.
+1. Create subreddit model. Created by a user.
+2. Create a sub reddit page so you can view the sub reddit. Explanation of routing.
+3. Creating slugs: talking about models, routes, and migrations.
 
 ---
 
@@ -84,7 +83,7 @@ Creating User Links and Self Posts
 
 Making sure that we have the two previous stuffed merge in. Should be able to only have authenticted users create sub reddits
 
-TODO: Present code that would show here's the model for URL Content and here's the model for Self posts. How do we change this. Isolate the learning to polymorphic inheritance. 
+TODO: Present code that would show here's the model for URL Content and here's the model for Self posts. How do we change this. Isolate the learning to polymorphic inheritance.
 
 1. You need two types of models. One for URL submissions one for self text submissions. How would you go about doing that.
 2. Go into a discussion of the the alternatives. You don't want to create two different models.
@@ -147,7 +146,7 @@ Calculate a user's karma and show it. Karma is the total upvotes from all their 
 
 ## Section merging karma, admin controls and home page.
 
-0. We can talk about how database and joins are kinda slow. 
+0. We can talk about how database and joins are kinda slow.
 1. Using Redis to cache scores. Update things using that and persist it down
 2. Might be kind of complicated to set up here.
 3. Setting up Redis might be complicated?
@@ -162,7 +161,7 @@ Calculate a user's karma and show it. Karma is the total upvotes from all their 
 
 1. Let's build some static asset pipeline so that we can use scss.
 2. Simplify your css rules by using scss. Ensure cross browser working
-3. Explain scss in the context of using css. 
+3. Explain scss in the context of using css.
 
 ---
 
