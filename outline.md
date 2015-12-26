@@ -31,7 +31,6 @@
 
 # Section - Setting up RVM and Rails
 
-
 Working together to make sure your
 
 1. Github project
@@ -83,12 +82,9 @@ Creating User Links and Self Posts
 
 Making sure that we have the two previous stuffed merge in. Should be able to only have authenticted users create sub reddits
 
-TODO: Present code that would show here's the model for URL Content and here's the model for Self posts. How do we change this. Isolate the learning to polymorphic inheritance.
-
-1. You need two types of models. One for URL submissions one for self text submissions. How would you go about doing that.
-2. Go into a discussion of the the alternatives. You don't want to create two different models.
-3. Polymorphic inheritance has the benefit of figuring out which model you're looking at while at the same time saying specific fields to both.
-5. Have someone create the page that shows what it looks like and shows the links and self posts.
+1. You need two types of models. One for URL submissions one for self text submissions. Explain benefits of polymorphic inheritance vs single table inheritance. 
+2. Talk about creating submission objects and the complexities of it.
+3. Draw views for subreddit pages and individual pages
 
 ---
 
