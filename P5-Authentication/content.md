@@ -132,7 +132,9 @@ end
   end
 ```
 
-You can see what's available in our callback to omniauth. It should contain information such as their Facebook ID, email, and a token. Based on the information you've gotten back we can create a user now.
+You can see what's available in our callback to omniauth by visiting http://localhost:3000/auth/facebook.
+
+Your server should print out the information retrieved by omniauth. It should contain information such as their Facebook ID, email, and a token. Based on the information you've gotten back we can create a user now.
 
 5. But we have a problem now. We need to identify a facebook user coming back to the site. We can't let them just sign up and create a new user everytime so we need to add some fields to our user table to identify Facebook users. So let's create two new fields: provider and UID. Which will store the provider we're using for third party authentication and their user id on that service.
 
@@ -146,6 +148,12 @@ We can add a ```:unless``` statement to our validation that ensures that can che
 
 ```
   validates_presence_of :password, :unless => lambda { self.provider.present? }
+```
+
+We will also need to turn off has_secure_password unfortunately since it requires a presence of a password.
+
+```
+  has_secure_password :validations => false
 ```
 
 7. Congratulations! You now a fully working Facebook login. The omniauth gem works with many providers so you can easily add more sources of authentication. You can see the full list [https://github.com/intridea/omniauth/wiki/List-of-Strategies](here).
