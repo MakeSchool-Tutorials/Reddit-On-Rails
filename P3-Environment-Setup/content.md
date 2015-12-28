@@ -19,9 +19,9 @@ This will take a moment, be patient.  Stop and get assistance if you receive any
 ## Github
 
 1. Create a GitHub account if you haven't already, and login. 
-2. Ensure you have access to the `https://github.com/makeschool-17` team on Github, and have one member of your team create a new repository called `RedoR-name1-name2`.
+2. Ensure you have access to the `https://github.com/makeschool-17` team on Github.
 2. One of the members on your team should create a new repository called `reddit-on-rails` or something similar.  There is no standardized naming convention for GitHub projects with the exception that they be named after the project they contain.
-3. Add you team member as a collaborator to the project:
+3. Add your team member as a collaborator to the project:
 	* Navigate to the project's `Settings` -> `Collaborators`
 	* Assert that your team member sees the project invitation in their Github interface.
 	* Don't attempt to clone this repository yet -- we're getting there!
