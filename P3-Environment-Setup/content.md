@@ -5,7 +5,7 @@ Homebrew is a binary package manager for OSX, similar to APT for Ubuntu based sy
 
 `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
-Once the install is complete, follow the directions given by the installer.  Once complete, close and reopen your terminal to load the new PATH that homebrew has configured for you.  To ensure that all is well, run `brew doctor`.  Report any errors noted here to an instructor for assistance.
+Once the install is complete, follow the directions given by the installer.  Once complete, close and reopen your terminal to load the new PATH that homebrew has configured for you.  To ensure that all is well, run `brew doctor`.  Stop and get assistance if you receive any errors.
 
 Finally, run `brew update` to update the listening of available packages from the cloud.
 
@@ -14,7 +14,7 @@ Before we get started, some essential packages must be installed.  From the comm
 
 `brew install git autoconf automake libtool pkg-config apple-gcc42 libyaml readline libxml2 libxslt libksba openssl sqlite`
 
-This will take a moment, be patient.  Report any errors to an instructor.
+This will take a moment, be patient.  Stop and get assistance if you receive any errors.
 
 ## Github
 
@@ -23,9 +23,8 @@ This will take a moment, be patient.  Report any errors to an instructor.
 3. Add you team member as a collaborator to the project:
 	* Navigate to the project's `Settings` -> `Collaborators`
 	* Assert that your team member sees the project invitation in their Github interface.
-4. Both you and your team member should clone the project to each machine to your desired development location: `git clone $REPO_ADDRESS`
+	* Don't attempt to clone this repository yet -- we're getting there!
 Note: The repositories do not need to be in the same location on each machine.
- 
 
 ## RBENV
 Similar to HomeBrew, RBENV is a package manager specifically used to manage Ruby version on your machine.  As you may have noticed, we used ruby to install Homebrew.  OSX (as well as most *nix distributions) comes installed with an older version of Ruby.  We want to ensure we're up to date with the latest and greatest, so the first tool we're going to install using Homebrew is rbenv: `brew install rbenv`.  We also want to be able to automatically install and configure versions of Ruby, so we'll also install ruby-build: `brew install ruby-build`.  
@@ -55,7 +54,7 @@ TODO: These are incomplete. DANK
 ```
 git init
 git add .
-git commit -am "Initial commit"
+git commit -m "Initial commit"
 git push
 ```
 
