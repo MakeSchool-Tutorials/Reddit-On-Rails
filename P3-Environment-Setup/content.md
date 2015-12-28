@@ -12,7 +12,7 @@ Finally, run `brew update` to update the listening of available packages from th
 ## Essential Packages
 Before we get started, some essential packages must be installed.  From the command line, issue the following directives:
 
-`brew install git autoconf automake libtool pkg-config apple-gcc42 libyaml readline libxml2 libxslt libksba openssl sqlite`
+`brew install git autoconf automake libtool pkg-config apple-gcc42 libyaml readline libxml2 libxslt libksba openssl sqlite postgresql`
 
 This will take a moment, be patient.  Stop and get assistance if you receive any errors.
 
