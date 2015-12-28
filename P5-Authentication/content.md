@@ -132,13 +132,20 @@ end
   end
 ```
 
-You can see what's available in our callback to omniauth.auth. Based on the information you've gotten back we can create a user now.
+You can see what's available in our callback to omniauth. It should contain information such as their Facebook ID, email, and a token. Based on the information you've gotten back we can create a user now.
 
-TODO: Do we want to continue this process? What happens about passwords? Do we redirect them to another page to generate the password or do you need to temporarily create a user account and then pass it in. Or store the email and token in the session.
+5. But we have a problem now. We need to identify a facebook user coming back to the site. We can't let them just sign up and create a new user everytime so we need to add some fields to our user table to identify Facebook users. So let's create two new fields: provider and UID. Which will store the provider we're using for third party authentication and their user id on that service.
 
-TODO: We want to store the token for future requests?
+So when we now create our session, we search for our user to see if they already exist otherwise we create a new user. You'll run into a small issue with user creation though we'll talk about in the next step.
 
-4. Another requirement is that we need a username!
+6. We have one problem. Facebook users don't have a username or a password! So we need to make sure that we generate them a username. For simplicity's sake we will just make this their name.
 
-Normally if you implement Facebook login you want a real identity and thus would use their real name but because this is Reddit we don't do that. So just generate a random username for each user in this case.
+We do not want to generate them a random password though, we want to make sure that if a user authenticated using Facebook we allow them to authenticate using Facebook only. Different sites have different policies on this but for Reddit we're going to change our validation on password to only check presence if provider is empty.
 
+We can add a ```:unless``` statement to our validation that ensures that can check provider field to see if it's present?
+
+```
+  validates_presence_of :password, :unless => lambda { self.provider.present? }
+```
+
+7. Congratulations! You now a fully working Facebook login. The omniauth gem works with many providers so you can easily add more sources of authentication. You can see the full list [https://github.com/intridea/omniauth/wiki/List-of-Strategies](here).
