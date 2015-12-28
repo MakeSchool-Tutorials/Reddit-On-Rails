@@ -7,7 +7,7 @@ Homebrew is a binary package manager for OSX, similar to APT for Ubuntu based sy
 
 Once the install is complete, follow the directions given by the installer.  Once complete, close and reopen your terminal to load the new PATH that homebrew has configured for you.  To ensure that all is well, run `brew doctor`.  Stop and get assistance if you receive any errors.
 
-Finally, run `brew update` to update the listening of available packages from the cloud.
+Finally, run `brew update` to update the listing of available packages from the cloud.
 
 ## Essential Packages
 Before we get started, some essential packages must be installed.  From the command line, issue the following directives:
@@ -30,9 +30,9 @@ Note: The repositories do not need to be in the same location on each machine.
 ## RBENV
 Similar to HomeBrew, RBENV is a package manager specifically used to manage Ruby version on your machine.  As you may have noticed, we used ruby to install Homebrew.  OSX (as well as most *nix distributions) comes installed with an older version of Ruby.  We want to ensure we're up to date with the latest and greatest, so the first tool we're going to install using Homebrew is rbenv: `brew install rbenv`.  We also want to be able to automatically install and configure versions of Ruby, so we'll also install ruby-build: `brew install ruby-build`.  
 
-Next, let's get the latest version of Ruby installed: `rbenv install 2.3.0`.  This will take a few minutes.  Report any errors to your instructor.
+Next, let's get the latest version of Ruby installed: `rbenv install 2.3.0`.  This will take a few minutes.  Stop and get assistance if you receive any errors.
 
-We can check which version of Ruby is being used by the system: `ruby -v`.  You should see that `system` is the current selected version of Ruby.  We want to be using 2.3.0, so let's tell rbenv to set the globally used Ruby: `rbenv global 2.3.0`.  Running `ruby -v` should now show 2.3.0 as the selected version.  If not, please grab an isntructor.
+We can check which version of Ruby is being used by the system: `ruby -v`.  You should see that `system` is the current selected version of Ruby.  We want to be using 2.3.0, so let's tell rbenv to set the globally used Ruby: `rbenv global 2.3.0`.  Running `ruby -v` should now show 2.3.0 as the selected version.  Stop and get assistance if you receive any errors.
 
 Lastly, we need to install Bundler, a version manager for Ruby libraries, and Rails:
 
@@ -56,12 +56,9 @@ TODO: These are incomplete. DANK
 git init
 git add .
 git commit -m "Initial commit"
-git push
 ```
 
 ## Pushing your project to Github
-
-TODO: include directions here for pushing a new project to github DANK
 
 This step only needs to be performed by the team member that generated the rails project.  Following the directions in the new Github repository created in the **GitHub** section, push the project up.
 
