@@ -67,7 +67,7 @@ This step only needs to be performed by the team member that generated the rails
 
 
 ## Sharing your project with your team members
-Now that your source has been pushed to your github, your team members should pull the project down to their local machines using the `clone` command:
+Now that your source has been pushed to your github, your team members should pull the project down to their local machines using the `clone` command.  This will copy the repository down to the a folder named after the repository in the current working directory.
 
 `git clone $REPO_ADDRESS`
 
