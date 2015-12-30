@@ -1,68 +1,70 @@
-# Setting up RVM and Rails
+# Setting up the Development Environment
+
+## Homebrew
+Homebrew is a binary package manager for OSX, similar to APT for Ubuntu based systems, and YUM for Debian based systems.  It allows you to easily install and upgrade command-line software.  Install Homebrew from the command line:
+
+`ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+
+Once the install is complete, follow the directions given by the installer.  Once complete, close and reopen your terminal to load the new PATH that homebrew has configured for you.  To ensure that all is well, run `brew doctor`.  Stop and get assistance if you receive any errors.
+
+Finally, run `brew update` to update the listing of available packages from the cloud.
+
+## Essential Packages
+Before we get started, some essential packages must be installed.  From the command line, issue the following directives:
+
+`brew install git autoconf automake libtool pkg-config apple-gcc42 libyaml readline libxml2 libxslt libksba openssl sqlite postgresql`
+
+This will take a moment, be patient.  Stop and get assistance if you receive any errors.
 
 ## Github
 
-In case you haven't already set up a github project for your project, we should do that now. Create your user accounts on Github and create a new repository. One of you should be able to create that repository and follow the instructions on the Github site to set up a folder in your project to pull that project. 
+1. Create a GitHub account if you haven't already, and login. 
+2. Ensure you have access to the `https://github.com/makeschool-17` team on Github.
+2. One of the members on your team should create a new repository called `reddit-on-rails` or something similar.  There is no standardized naming convention for GitHub projects with the exception that they be named after the project they contain.
+3. Add your team member as a collaborator to the project:
+	* Navigate to the project's `Settings` -> `Collaborators`
+	* Assert that your team member sees the project invitation in their Github interface.
+	* Don't attempt to clone this repository yet -- we're getting there!
+Note: The repositories do not need to be in the same location on each machine.
 
-In Settings -> Collaborators you can add people who can be collaborators on the project with you. Make sure your partner is a collaborator and that they have pulled the project into their working environment. 
+## RBENV
+Similar to HomeBrew, RBENV is a package manager specifically used to manage Ruby version on your machine.  As you may have noticed, we used ruby to install Homebrew.  OSX (as well as most *nix distributions) comes installed with an older version of Ruby.  We want to ensure we're up to date with the latest and greatest, so the first tool we're going to install using Homebrew is rbenv: `brew install rbenv`.  We also want to be able to automatically install and configure versions of Ruby, so we'll also install ruby-build: `brew install ruby-build`.  
 
-You should both have a folder on your computer now that is linked to the repository. One of you should commit and push something to the repo and make sure the other one that pull those changes appropriately. 
+Next, let's get the latest version of Ruby installed: `rbenv install 2.3.0`.  This will take a few minutes.  Stop and get assistance if you receive any errors.
 
-TODO: Do I need to provide more detailed instructions here or should git be familiar enough for students? Refresher might be useful. 
+We can check which version of Ruby is being used by the system: `ruby -v`.  You should see that `system` is the current selected version of Ruby.  We want to be using 2.3.0, so let's tell rbenv to set the globally used Ruby: `rbenv global 2.3.0`.  Running `ruby -v` should now show 2.3.0 as the selected version.  Stop and get assistance if you receive any errors.
 
-## RVM
-
-Now that you both have a shared repo to work on let's make sure that we can set up our environment the same. **RVM** is an awesome tool that allows you to use different versions of ruby an different gems on a per project basis. This allows you to work on MULTIPLE projects with different dependencies all on the same machine. It also allows a team of developers to have a consistent environment to work in.
-
-You can run the following command to run RVM
-
-```
-	\curl -sSL https://get.rvm.io | bash -s stable --ruby
-```
-
-Which should install the latest stable version of RVM. Restart your terminal to make sure that it's installed. You can verify that it works by running 
+Lastly, we need to install Bundler, a version manager for Ruby libraries, and Rails:
 
 ```
-	type rvm | head -n 1
+gem install bundler
+gem install rails
+rbenv rehash
 ```
+The rehash command is necessary only when installing gems without using Bundler (we'll cover this in more detail later) for the first time in a given version of Ruby (each version of Ruby maintains its own set of gems due to version dependency issues).  
 
-which should output that 'rvm is a function'.
+## Rails
+Rails is an opinionated framework, and comes with a set of generators to make our lives easier.  The first generator we're going to use is `new`, which will create a complete skeleton of a rails project for us.  Only one of the team members needs to perform this step, so please pair for it:
 
-We'll now create two files in your project. Create a file called **.ruby-version** and write in the line ruby-2.2.3 in it. 
+`rails new $PROJECT_NAME` -- replace $PROJECT_NAME with the name used for the repo created under the **Github** section.  Navigate in to your project using the **c**hange **d**irectory command: `cd $PROJECT_NAME`.  Then, using the **l**i**s**t command, check out the directory structure that the generator created for you: `ls -la`.
 
-This hidden file ensures that when RVM loads a directory it knows which version of ruby to use. This ensures that we all have the same ruby version and that RVM will install any gems in a local directory as opposed to the global directory.
+Next, we need to create a new git repository to store changes and allow you to share the source code of your new project with your team members.  In the directory of your new rails project, run:
 
-## Setting up your Rails Project
-
-In case you haven't already read the instructions on creating a new Rails project and setting up your gems, this would be a good time to cover that in the RailsTutorial.org
-
-https://www.railstutorial.org/book/_single-page#sec-installing_rails
-
-Follow the instructions on setting up a new Rails Project though I would name the project a more descriptive name than hello_project. Perhaps something like reddit_on_rails.
-
-You can stop once you hit section 1.3.3. That should be a basic project at this point. 
-
-## Configuring Editors
-
-Make sure that you both have editors set to the same preferences. Tabs vs spaces is a surefire way to make sure that you have conflicts when editing the same file. The general preference for ruby projects is to have two **spaces** without any hard tabs. 
-
-If you're using Sublime it's pretty easy to configure your project to use two spaces.
-
-Go to the bottom right Sublime and choose from Plain Text (or whatever it says) to Ruby.
-
-
-Settings (Or Subling Text in the top left on a Mac) 
--> Preferences 
--> Settings - More 
--> Syntax Specifix - User
-
-This should open a new file where you can copy and paste the following lines:
+TODO: These are incomplete. DANK
 
 ```
-	{
-	  "tab_size": 2,
-	  "translate_tabs_to_spaces": true
-	}
+git init
+git add .
+git commit -m "Initial commit"
 ```
 
-Don't fear if you're using two different editors. You can look up the specific instructions if you're not using Sublime to configure it to use 2 spaces instead of tabs. 
+## Pushing your project to Github
+
+This step only needs to be performed by the team member that generated the rails project.  Following the directions in the new Github repository created in the **GitHub** section, push the project up.
+
+
+## Sharing your project with your team members
+Now that your source has been pushed to your github, your team members should pull the project down to their local machines using the `clone` command.  This will copy the repository down to the a folder named after the repository in the current working directory.
+
+`git clone $REPO_ADDRESS`
+
