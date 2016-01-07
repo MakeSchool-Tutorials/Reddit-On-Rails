@@ -114,8 +114,8 @@ Making sure that we have the two previous stuffed merge in. Should be able to on
 
 1. Create comments, make sure that they can link to their parent
 2. Show the HTML representation
-3. Advanced: be able to hide and show and collapse comments
-4. Super advanced. Implement other sorting options for comments.
+3. Talk about eager loading
+4. Bonus: Sorting & Better Association Methods
 
 ---
 
