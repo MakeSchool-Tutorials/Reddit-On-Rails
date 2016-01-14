@@ -1,8 +1,14 @@
 # Homepage
 
-## Spliting up
+## Intent
 
-This is another great time to split up. We're going to be covering some topics about developing your home page here and learning more about partials here and modernizing css.
+1. Setup your home page through routing
+2. Using partials to reuse vie code
+3. Learning to use a popular gem for pagination of our home page
+
+## Checking in
+
+This is another great time to split up the work. We're going to be covering some topics about developing your home page with an emphasis on view code and routing. 
 
 ## Home Page
 
@@ -43,10 +49,7 @@ We'll integrate our first gem in order to develop paginated posts.
 
 Switch over the home page to use pagination.
 
-## Boostrap
+### Bootstrap
 
-
-
-# TODO: Using Boostrap.css to clean up and simpify our css.
-
+If you haven't already set it up. This would be a good time to start including boostrap css into your home page. 
 

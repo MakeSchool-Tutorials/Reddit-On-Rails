@@ -1,23 +1,29 @@
-# Section Voting
+# Voting
 
-## Spliting up
+## Intent
 
-If you want, this is another great time to split up. We're going to be covering some topics about voting here while the other section will cover more topics about front-end organization and css. Figure out your partner's strengths and preferences and split up. 
+1. Tracking votes using models
+2. Using asynchronous javascript or Rails code to develop voting
+
+## Checking In
+
+This is another great time to split up the project. We're going to be covering some topics about voting here while the other section will cover more topics about front-end view code and css. This section will cover more Rails models. Figure out your partner's strengths and preferences and split up. 
 
 ## Voting
 
+One of the biggest things about reddit is the ability to vote! Upvotes, downvotes, leftvotes, green votes! We're going to need track of all votes that happen in our system and ensure that nobody has more than one vote on any post. So let's add voting to our model.
 
-One of the biggest things about reddit is the ability to vote! Upvotes, downvotes, leftvotes, green votes! But more importantly we're going to need track of all votes that happen in our system and ensure that nobody has more than one vote on any post. So let's add voting to our model.
+What is important in a vote? A **user** has to vote **up** or **down** on a specific **submission**. We can determine what our relationships and our model will look like from there. I'll leave this an exercise for you to figure out and check back on this once you're ready. I'm going to influence your decision here though. Think about what else you vote on reddit? What did we learn last lesson that might be useful?
 
-What is important in a vote? A **user** has to vote **up** or **down** on a specific **submission**. We can determine what our relationships and our model will look like from there. I'll leave this an exercise for you to figure out and check back on this once you're ready. I'm going to influence your decision here though. Think about what else you vote on reddit? What did we learn last lesson that might be useful.
-
-Take a second to determine what this might look like based on the hints.
+Take a second to determine what this might be. 
 
 ## Voting - Models
 
-Votes belong on both posts and comments! So let's create a polymorphic relationship again where vote belong to a "votable" object which can be either a post or a comment in this case. That way we can re-use our voting model for both comments and posts. 
+Votes belong on both posts and comments! Let's create a polymorphic relationship again where vote belong to a "votable" object which can be either a post or a comment in this case. That way we can re-use our voting model for both comments and posts. 
 
-Try to think of what validations you'll need and set up their up at this point. You'll also need a uniqueness constraint on user_id but only based on the votable item. For that we can learn about :scope in a validation, this allows us to specify a uniqueness constraint given another field's unique constraint.  Here's an example:
+Determine the validations you'll need and add them to the model. 
+
+We also want to limit it so that there is only one VOTE per votable object for each user. We can add uniqueness constraints using ```validate_uniqueness_of``` but how do we ensure that it will work for a votable for each user?  For that we can learn about :scope in a validation, this allows us to specify a uniqueness constraint given another field's unique constraint.  Here's an example:
 
 ```
 	class HolidayCalendarEvent < ActiveRecord::Base
@@ -25,28 +31,36 @@ Try to think of what validations you'll need and set up their up at this point. 
 	end
 ```
 
-As you can see this allows us to have Christmas every year. Without the scope we would be only allow us to have one Christmas and unless you're a Grinch you don't want that. So the scope requirement us allows to have only one holiday of each type but in a year. 
+As you can see this allows us to have Christmas every year. Without the scope we would only be allowed to have one Christmas and unless you're a Grinch you don't want that. The scope parameter allows us to have only one holiday of each type but in a year. 
+
+Figure out how to do this yourself but before you start this is a good time to add a test case to make sure that our model raises an error if it tries to create two votes for each item from any user. 
 
 ## Voting and Views
 
-When you vote on something in reddit you increase it's vote. If you downvote you can move a vote into negative values. So the score of any post or comment is in fact the total # of upvotes - the total # of downvotes. We might want to create a quick method on our submission model to help us calculate this quickly so we don't have to do it over and over again and make sure to display this on our view. Add the vote up and down buttons right now and we'll hook them up in the next step.
+When you vote on something in Reddit you increase it's vote. If you downvote you can move a vote into negative values. The score of any post or comment is the total # of upvotes - the total # of downvotes. We want to create a method on our submission model to help us calculate this so we don't have to do it over and over again. Let's create that method and use it in our view to display the score of any post. 
 
 ## Adding Voting
 
-# TODO: Do I divulge into JQuery here and best practices about that or do I teach angular or should I just stick with Rails tools to do work here. 
+We have all this voting code but we can't actually have the user up and down vote yet. We need to create our voting buttons and hook them up. Let's try to only add voting to our submission first to make things less complicated. 
 
-So the magic of Rails allows us to do quite a bunch of updates without having to do lot extra work. Let's learn about the magic of link_to. A link to generates the URL normally in Rails app but if we specify that this is a remote link, it will retrieve things dynamically using JS for us. Specifying the method post will allow us to send a vote command without having to do any extra work involving JS itself. 
+The magic of Rails allows us to do asynchronous updates without having to do lot extra work. Let's learn about the magic of ```link_to```. A ```link_to``` generates a URL in Rails to link to a specific resource, it's a nice shortcut to allow us to generate URLs programatically. 
+
+But if we specify that this is a remote link, it will retrieve things dynamically using JS for us. Specifying that the link is POST method will allow us to send a vote command without having to do any extra work involving JS itself!
 
 ```
 <%= link_to "&#9660;".html_safe, votes_path( { upvote: false,
                                        submission_votable_id: votable.id }),
                                        method: :post,
-                                       remote: true,
-                                       class: voteClasses[1] %>
+                                       remote: true %>
 ```
 
-# TODO: How do I fix this for both votes and comments? Adding a comment_votable_id and specific. 
+We need to modify or create our votes controller create method so that when it is given a ```submission_votable_id``` parameter, it creates a submission object and connects it to our vote. 
 
-We can add this down vote and upvote ability quickly and easy for all our commands.
+## Updating the Vote 
 
-# TODO: This section seems sort, maybe we can talk about using Redis to speed up our operations and act as a cache. 
+But when we upvote, our button needs to dynamically change! We can use helpers to determine which css class to put on our link_to to style it differently. 
+
+Your helper should return a class for upvoted buttons if they have a vote on them and if that vote is an upvote. Same with the downvote. Make it return a css class that you can then add rules for to style the upvote and down vote button.
+
+
+
