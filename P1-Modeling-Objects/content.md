@@ -3,7 +3,7 @@ title: "Modeling Objects"
 slug: modeling-objects
 ---
 
-Tips:
+# Tips:
 
 * Google the answers to quiz items if you’re not sure what the answer is.
 
