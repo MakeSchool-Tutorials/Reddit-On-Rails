@@ -1,3 +1,8 @@
+---
+title: "Authentication and Authorization"
+slug: authentication-and-authorization
+---
+
 07 - Authentication and Authorization
 
 ## Replacing our User with Devise

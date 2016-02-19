@@ -1,3 +1,8 @@
+---
+title: "Subreddits"
+slug: subreddits
+---
+
 03 - Subreddits
 
 # Adding some features
