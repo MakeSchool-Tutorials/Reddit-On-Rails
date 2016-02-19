@@ -25,7 +25,7 @@ Next, we need to figure out how to represent these needs in our models. Generall
 
 **Task: Create at least five more user stories.**
 
-## Entity-Relationship-Diagrams
+# Entity-Relationship-Diagrams
 
 **ERDs **([https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model](https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model))** **are a common way to represent the objects and relationships represented by a relational database. In the example below you can see that each rectangle represents a table (a Rails **Model**), each model has many attributes, and the arrows between objects represent primary/foreign-key joins (ActiveRecord **Relationships**).
 
@@ -49,7 +49,7 @@ To get started, let’s use the Rails generators covered in the Rails tutorial t
 
 *Q: Why does the order of model generation matter?  Does the order of columns matter?*
 
-## Testing and Validations
+# Testing and Validations
 
 Now that we’ve generated most of our base models, we need to add validations before starting to connect them with one another.  Every attribute on a model should have a test, and every validation for every attribute should have a test.  Since we’re not hacks, we’ll write our tests first.
 
@@ -57,7 +57,7 @@ Now that we’ve generated most of our base models, we need to add validations b
 
 **Task: Brainstorm validations necessary for each model, then add them using TDD**.
 
-### First Relationships
+## First Relationships
 
 The ERD gives us a good idea of how objects are related, so we’ll follow that for this exercise.
 
