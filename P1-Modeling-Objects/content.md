@@ -11,12 +11,11 @@ Tips:
 
 Let’s consider Reddit’s basic use cases. We can express the functionality we're building using statements called *user stories* in which we detail the who and the what (and sometimes why) for each feature.  User stories generally follow this format:
 
- As a <role>, I want <feature> so that <reason>.
+ As a \<role\>, I want \<feature\> so that \<reason\>.
 
 Here are some examples of the stories we’re going to address during this project:
 
 * As a user, I want to be able to change my password.
-
 * As a user, I want to be able to comment on posts.
 
 Next, we need to figure out how to represent these needs in our models. Generally, our **nouns** will be our models. The relationships between the objects will be **verbs of possession**.  For example, a **Post** will have many **Comments**, indicating a one-to-many relationship between the two objects.
