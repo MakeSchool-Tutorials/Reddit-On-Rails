@@ -19,7 +19,7 @@ By the end of this tutorial, you will  have accomplished the following:
 
 Reddit is a simple web application that we’ll use to cover many of the concepts that would be required during development of a production-ready application.  Hopefully some of you have heard of or used Reddit before, but if not, you can find info about what reddit is on [wikipedia](https://en.wikipedia.org/wiki/Reddit). The basic premise is you can create posts for other users who upvote or downvote the content which moves the post up or down the front page.  Users can also comment on posts, and comments on comments.  We recommend creating a reddit account, creating a subreddit, creating a post, and commenting on another user’s post.  Play with up and down voting as well, as a basic understanding of these core features will be of importance during this tutorial.
 
-**Task: ****Create a Reddit account**
+**Task: Create a Reddit account**
 
 **Task: Create a subreddit (topic doesn’t matter, but keep it work safe)**
 
