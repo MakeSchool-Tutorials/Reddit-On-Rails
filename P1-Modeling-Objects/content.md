@@ -55,7 +55,7 @@ To get started, let’s use the Rails generators covered in the Rails tutorial t
 
 Now that we’ve generated most of our base models, we need to add validations before starting to connect them with one another.  Every attribute on a model should have a test, and every validation for every attribute should have a test.  Since we’re not hacks, we’ll write our tests first.
 
-**Task: Using TDD, check that the correct attributes exist on the models you generated.  **
+**Task: Using TDD, check that the correct attributes exist on the models you generated.**
 
 **Task: Brainstorm validations necessary for each model, then add them using TDD**.
 
