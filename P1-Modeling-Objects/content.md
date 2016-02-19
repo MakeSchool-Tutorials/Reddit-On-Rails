@@ -4,7 +4,9 @@ slug: modeling-objects
 ---
 
 Tips:
+
 * Google the answers to quiz items if you’re not sure what the answer is.
+
 * Remember to TDD!  Simplecov should report at least 90% coverage!
 
 ## User Stories
