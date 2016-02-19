@@ -4,12 +4,10 @@ slug: modeling-objects
 ---
 
 Tips:
-
 * Google the answers to quiz items if you’re not sure what the answer is.
-
 * Remember to TDD!  Simplecov should report at least 90% coverage!
 
-# User Stories
+## User Stories
 
 Let’s consider Reddit’s basic use cases. We can express the functionality we're building using statements called *user stories* in which we detail the who and the what (and sometimes why) for each feature.  User stories generally follow this format:
 
