@@ -43,7 +43,7 @@ You will be graded on the quality and coverage of your testing, so be sure to fo
 
 Throughout this tutorial you will be learning how to build a project from the ground up in the same way you might build a project in a professional environment. You will be expected to digest documentation and apply it to your project without step-by-step direction from an instructor or the tutorial.  Yes, this will take more time and seem more complex, but you’ll benefit greatly from being developing and guiding your own work cycles.
 
-An important part of performing well on a team is understanding the best practices and style guides implemented by the team.  An excellent place to start is here: [https://github.com/styleguide/ruby](https://github.com/styleguide/ruby). This style guide is widely accepted by the Ruby FOSS community..
+An important part of performing well on a team is understanding the best practices and style guides implemented by the team.  An excellent place to start is here: [https://github.com/styleguide/ruby](https://github.com/styleguide/ruby). This style guide is widely accepted by the Ruby FOSS community.
 
 **Task: Read and reference the Ruby style guide for all code written for this project.**
 
