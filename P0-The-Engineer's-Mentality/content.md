@@ -35,9 +35,9 @@ Reddit is a simple web application that we’ll use to cover many of the concept
 
 You will be graded on the quality and coverage of your testing, so be sure to follow TDD and use the tools we’ll introduce in the next lesson to ensure adequate coverage.  Don’t be afraid to ask for guidance, and don’t be discouraged if you’re asked to reimplement aspects of your application due to inadequate testing or poor pattern implementation.  You’ll also be given the opportunity to pair program aspects of the project if that seems valuable to you.  
 
-**Task: Enjoy this video of Ruby professionals pair programming:
+**Task: Enjoy this video of Ruby professionals pair programming:**
 
-[https://www.youtube.com/watch?v=sn7prRGGp4**Q](https://www.youtube.com/watch?v=sn7prRGGp4Q)**
+[https://www.youtube.com/watch?v=sn7prRGGp4**Q](https://www.youtube.com/watch?v=sn7prRGGp4Q)
 
 # Learning through doing
 
