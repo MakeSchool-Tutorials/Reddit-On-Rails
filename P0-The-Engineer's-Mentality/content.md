@@ -1,4 +1,7 @@
-p0: The Engineer’s Mentality
+---
+title: "The Engineer's Mentality"
+slug: the-engineers-mentality
+---
 
 # Introduction
 

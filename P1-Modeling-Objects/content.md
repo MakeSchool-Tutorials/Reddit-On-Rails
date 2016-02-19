@@ -1,4 +1,7 @@
-02: Modeling Objects
+---
+title: "Modeling Objects"
+slug: modeling-objects
+---
 
 Tips:
 
