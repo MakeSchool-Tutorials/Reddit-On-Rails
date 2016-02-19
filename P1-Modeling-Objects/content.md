@@ -27,9 +27,9 @@ Next, we need to figure out how to represent these needs in our models. Generall
 
 # Entity-Relationship-Diagrams
 
-![ERD](assets/images/p2_erd.png "ERD")
+![ERD](p2_erd.png "ERD")
 
-**ERDs **([https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model](https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model))** **are a common way to represent the objects and relationships represented by a relational database. In the example below you can see that each rectangle represents a table (a Rails **Model**), each model has many attributes, and the arrows between objects represent primary/foreign-key joins (ActiveRecord **Relationships**).
+**ERDs ([https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model](https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model))** are a common way to represent the objects and relationships represented by a relational database. In the example below you can see that each rectangle represents a table (a Rails **Model**), each model has many attributes, and the arrows between objects represent primary/foreign-key joins (ActiveRecord **Relationships**).
 
 **Task: read the article linked and ensure you understand Chen style documentation.**
 
