@@ -37,7 +37,7 @@ Next, we need to figure out how to represent these needs in our models. Generall
 
 **Task: redraw the provided ERD using Chen style documentation.**
 
-GIven the ERD, we can see the models, their relationships to one another, and some of their attributes (not shown are the primary and foreign keys, which described by the connections between objects).  
+GIven the ERD, we can see the models, their relationships to one another, and some of their attributes (not shown are the primary and foreign keys, which described by the connections between objects).
 
 *Q: Based on the connections between models, which type of relationships does each model have with its peers?*
 
@@ -45,7 +45,7 @@ GIven the ERD, we can see the models, their relationships to one another, and so
 
 Another subtlety should be noted here: both **post** and **comment** persist their data in a field called **content**.  **Normalization of parameter names** is an important part of application design.  First and foremost, it allows a style guide to develop organically for the application, and it allows us to more easily construct interfaces, shims, and duck-types later in the applications life.
 
-To get started, let’s use the Rails generators covered in the Rails tutorial to construct the models described in the ERD presented earlier in this lesson.  Draft the commands in a text editor first, and then compare them to the commands provided in the solutions section below.  
+To get started, let’s use the Rails generators covered in the Rails tutorial to construct the models described in the ERD presented earlier in this lesson.  Draft the commands in a text editor first, and then compare them to the commands provided in the solutions section below.
 
 *Q: Why does the order of model generation matter?  Does the order of columns matter?*
 
