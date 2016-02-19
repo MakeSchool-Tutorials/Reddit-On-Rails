@@ -1,6 +1,6 @@
-p0: The Engineer’s Mentality
+# p0: The Engineer’s Mentality
 
-# Introduction
+Introduction
 
 We are using [Ruby on Rails](http://rubyonrails.org/) to build a Reddit clone so we can focus on learning how to build a well-architected, stable and scalable web application. This project is presented in a similar fashion as a project spec might be provided to an engineer by an architect.  We’ll focus on a TDD approach to creating an application by writing our failing tests before writing the code to correct them.  We’ll use gems accepted by the open-source community to learn the correct nomenclature for common programming patterns, and will require you to understand the documentation for these tools prior to implementing them.  We’ll also introduce the idea of peer code review and focus on following community-accepted best-practices.
 
