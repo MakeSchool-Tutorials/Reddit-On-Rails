@@ -1,6 +1,6 @@
 ---
 title: "Ruby Debugging"
-slug: ruby-debugging
+slug: 0-ruby-debugging
 ---
 
 

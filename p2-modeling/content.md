@@ -1,6 +1,6 @@
 ---
 title: "Modeling"
-slug: modeling
+slug: 2-modeling
 ---
 
 Tips:

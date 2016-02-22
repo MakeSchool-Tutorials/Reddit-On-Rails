@@ -1,6 +1,6 @@
 ---
 title: "Subreddits"
-slug: subreddits
+slug: 3-subreddits
 ---
 
 # Adding some features

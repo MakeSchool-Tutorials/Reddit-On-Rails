@@ -1,6 +1,6 @@
 ---
 title: "Building Reddit"
-slug: building-reddit
+slug: 1-building-reddit
 ---
 
 # Introduction
